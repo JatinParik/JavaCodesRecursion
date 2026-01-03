@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class IndicesOfTargetValueAsArrayList { 
    
     //First Approach
-    static ArrayList findIndices(int[] arr, int idx, int x, ArrayList<Integer> l) {
+    static ArrayList<Integer> findIndices(int[] arr, int idx, int x, ArrayList<Integer> l) {
         if(idx==arr.length) return l; //Base Case
         if(arr[idx]==x)  l.add(idx);  //Self Work
         findIndices(arr, idx+1, x, l); //Recursive Work
