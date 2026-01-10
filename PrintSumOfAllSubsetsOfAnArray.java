@@ -9,7 +9,7 @@ public class PrintSumOfAllSubsetsOfAnArray {
          } 
          int cE = arr[i];    //cE -> current element
          subsetSum(arr, i+1, currAns + cE);    //Include cE in sum
-         subsetSum(arr, i+1, currAns);        //Do not include cE in sum
+         subsetSum(arr, i+1, currAns);        //Do not include cE in sum       
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
